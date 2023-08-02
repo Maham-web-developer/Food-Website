@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- bootstrap link css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <title>DINNER WEBSITE</title>
+</head>
+
+<body>
+  <!-- ============navbar start========= -->
+  <section id="header">
+    <a href="#"><img src="./img/logo.jfif" class="logo" alt=""></a>
+    <div>
+      <ul id="navbar">
+        <li><a  href="./index.html">Home</a></li>
+
+        <li><a href="./about.html">About</a> </li>
+        <li class="dropdown"><a href="" class="dropbtn">Manu</a>
+          <div class="dropdown-content">
+            <a class="active" href="#">Pasta</a>
+            <a href="./pizza.html">Pizza</a>
+            <a href="./lasagna.html">Lasagna</a>
+            <a href="./biryani.html">Biryani</a>
+            <a href="./biryani.html">Ice Cream</a>
+          </div>
+        </li>
+        <li><a href="./review.html">Review</a></li>
+
+        <a href="#" id="close"><i class='bx bx-window-close'></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <i id="bar" class="bx bx-menu"></i>
+    </div>
+  </section>
+  <!-- ============navbar end======== -->
+  <!-- =====card section start====== -->
+  <div class="row pt-5">
+    <div class="col-12 col-lg-3">
+      <div class="border P-2 text-center">
+        <img class="img-fluid" src="./img/chicken-pasta.jfif" height="100px" width="500px">
+        <h5 class="py-2">Chicken Pasta</h5>
+        <P>RS : 500</P>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" 
+        class="btn btn-outline-dark">ORDER NOW</button>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-3 mb-4">
+      <div class="border p-2 text-center">
+        <img class="img-fluid" src="./img/bechamel-chicken-pasta.jpg" height="100px" width="500px">
+        <h5 class="py-2">Bechamel Chicken Pasta</h5>
+        <P>RS : 650</P>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" 
+        class="btn btn-outline-dark">ORDER NOW</button>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-3 mb-4">
+      <div class="border p-2 text-center">
+        <img class="img-fluid" src="./img/weeknight-bbq-chicken-and-pasta.jpg" height="100px" width="500px">
+        <h5 class="py-2">Weeknight Bbq Chicken Pasta</h5>
+        <P>RS : 700</P>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" 
+        class="btn btn-outline-dark">ORDER NOW</button>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-3 mb-4">
+      <div class="border p-2 text-center">
+        <img class="img-fluid" src="./img/greek-chicken-pasta.jpg" height="100px" width="500px">
+        <h5 class="py-2">Greek Chicken Pasta</h5>
+        <P>RS : 450</P>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+         class="btn btn-outline-dark">ORDER NOW</button>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-3 mb-4">
+      <div class="border p-2 text-center">
+        <img class="img-fluid" src="./img/tuscan-chicken-pasta.jpg" height="100px" width="500px">
+        <h5 class="py-2">Tuscan Chicken Pasta</h5>
+        <P>RS : 800</P>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+         class="btn btn-outline-dark">ORDER NOW</button>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-3 mb-4">
+      <div class="border p-2 text-center">
+        <img class="img-fluid" src="./img/herbed-chicken-pasta.jpg" height="100px" width="500px">
+        <h5 class="py-2">Herbed Chicken PASTA</h5>
+        <P>RS :680</P>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+         class="btn btn-outline-dark">ORDER NOW</button>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-3 mb-4">
+      <div class="border p-2 text-center">
+        <img class="img-fluid" src="./img/creamy-chicken-pasta.jpg" height="100px" width="500px">
+        <h5 class="py-2">Creamy Chicken Pasta</h5>
+        <P>RS : 900</P>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" 
+        class="btn btn-outline-dark">ORDER NOW</button>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-3 mb-4">
+      <div class="border p-2 text-center">
+        <img class="img-fluid" src="./img/herb-and-chicken-pasta.jpg" height="100px" width="500px">
+        <h5 class="py-2">Herb Chicken Pasta</h5>
+        <P>RS : 999</P>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+         class="btn btn-outline-dark">ORDER NOW</button>
+      </div>
+    </div>
+  </div>
+<!-- =====card section end====== -->
+<!-- ==========form start============ -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <form action="">
+            <h5 class="modal-title" id="exampleModalLabel">ORDER NOW</h5>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="form-floating">
+            <input required type="text" class="form-control mb-3" id="floatingName"
+              placeholder="Your Name | Company Name">
+            <label for="floatingName">Your Name</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input required type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input required type="text" class="form-control" id="floatingphone" placeholder="+93">
+            <label for="floatingphone">Phone</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input required type="text" class="form-control" id="floatingphone" placeholder="+93">
+            <label for="floatingphone">Dish Name</label>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Sand</button>
+        </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+<!-- ==========form end============ -->
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

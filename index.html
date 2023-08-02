@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- bootstrap link css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <title>DINNER WEBSITE</title>
+</head>
+
+<body>
+  <!-- ============navbar start========= -->
+  <section id="header">
+    <a href="#"><img src="./img/logo.jfif" class="logo" alt=""></a>
+    <div>
+      <ul id="navbar">
+        <li><a class="active" href="#">Home</a></li>
+
+        <li><a href="./about.html">About</a> </li>
+        <li class="dropdown"><a href="" class="dropbtn">Manu</a>
+          <div class="dropdown-content">
+            <a href="./pasta.html">Pasta</a>
+            <a href="#">Pizza</a>
+            <a href="./lasagna.html">Lasagna</a>
+            <a href="./biryani.html">Biryani</a>
+            <a href="./ice-cream.html">Ice Cream</a>
+          </div>
+        </li>
+        <li><a href="./review.html">Review</a></li>
+
+        <a href="#" id="close"><i class='bx bx-window-close'></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <i id="bar" class="bx bx-menu"></i>
+    </div>
+  </section>
+  <!-- ============navbar end======== -->
+  <!-- ==========banner section start===== -->
+  <section class="banner-section">
+    <h4 class="banner-h4">Spicy & Delicious</h4>
+    <h1 class="banner-h1">PAKISTANI</h1>
+    <p class="banner-p">RESTAURANT OF CITY</p>
+    <button>ORDER NOW</button>
+  </section>
+  <!-- ==========banner section end====== -->
+  <!-- ===========About Section start========== -->
+  <section id="#about" class="container-fluid py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 col-lg-5">
+          <img class="img-fluid" src="./img/chef.jpg" align="left">
+        </div>
+        <div class="col-10 col-lg-6">
+          <div class="item">
+            <h2 class="about">About us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum tempora suscipit beatae maiores
+            voluptatem doloribus fuga iusto veritatis facilis officia quod minus  Ea cupiditate sequi, ratione
+            explicabo quam magnam, quidem laboriosam accusantium assumenda hic necessitatibus modi repellat.<span
+            class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores velit illum aliquam
+            ducimus ea. ci architecto quae
+            iure!</span></p>
+            <div class="read-more-btn" onclick="toggleDetails(0)">Read less</div>
+          </div>
+          <h3>Follow Us</h3>
+
+          <a href=""><img src="./img/facebook.jfif" height="40px"></a>&nbsp;&nbsp;
+          <a href=""><img src="./img/google.jpg" height="50px"></a>&nbsp;&nbsp;
+          <a href=""><img src="./img/instagram.jfif" height="40px"></a>&nbsp;&nbsp;
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===========About Section end========== -->
+  <!-- ============ card section start======== -->
+  <section class="cart">
+    <div class="cart"></div>
+
+    <div class="cart cart-2"> </div>
+    <div class="cart cart-3"> </div>
+    <div class="cart cart-4"> </div>
+    <div class="cart cart-5"> </div>
+    <div class="cart cart-6"> </div>
+  </section>
+
+  <!-- ============card section end======== -->
+  <!-- ==============counting order start============ -->
+  <section class="counting">
+    <div class="container">
+      <div class="countNumber" data-target="30000"></div>
+      <h4>Facebook Orders</h4>
+    </div>
+
+    <div class="container">
+      <div class="countNumber" data-target="70000"></div>
+      <h4>Instagram Orders</h4>
+    </div>
+
+    <div class="container">
+      <div class="countNumber" data-target="50000"></div>
+      <h4>Google Orders</h4>
+    </div>
+  </section>
+  <!-- ==============counting order end============ -->
+  <!--===== =========Footer start================== -->
+  <footer class="section-p1">
+    <div class="col">
+      <img class+="logo" src="./img/header/logo2.jpg" alt="">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> Abc city Karachi</p>
+      <p><strong>Phone:</strong> +93233366912</p>
+      <p><strong>Hours:</strong> 24</p>
+    </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Veiw Cart</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="col">
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <a href=""><img src="./img/facebook.jfif" height="40px"></a>&nbsp;&nbsp;
+          <a href=""><img src="./img/google.jpg" height="50px"></a>&nbsp;&nbsp;
+          <a href=""><img src="./img/instagram.jfif" height="40px"></a>&nbsp;&nbsp;
+        </div>
+      </div>
+
+  </footer>
+
+  <!-- ================Footer end============ -->
+
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,600;1,700&display=swap');
+  body {
+      width: 100%;
+  }
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'poppins', sans-serif;
+  }
+  /* =======Header-start======= */
+  #header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3px 2px;
+      background: white;
+      box-shadow: 0 5px 15px rgba(22, 22, 22, 0.06);
+      z-index: 999;
+      position: sticky;
+      top: 0;
+      left: 0;
+  }
+  .logo{
+    height: 80px;
+    padding-left: 50%;
+  }
+  #navbar {
+      display: flex;
+      align-items: center;
+     justify-content: center;
+  }  
+  #navbar li {
+      list-style: none;
+      padding: 0 20px;
+      position: relative;
+  } 
+  #navbar li a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: black;
+      transition: 0.3s ease;
+  } 
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li.dropdown {
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;  
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+   
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+   
+  }
+  #mobile {
+      display: none;
+      align-items: center;
+  
+  }
+  #close{
+      display: none;
+  }
+
+/*====== navbar end==== */
+
+/*======banner-section start==== */
+.banner-h4{
+    font-size: 50px;
+   margin: center;
+   font-style: italic;
+}
+.banner-h1{
+    font-size: 140px;
+    font-weight: 700;
+}
+.banner-p{
+    font-size: 30px;
+    margin: 1px;
+}
+button{
+    margin: 5px;
+    font-size: 25px;
+}
+.banner-section {
+    background-image: url('./img/banner.jfif');
+    background-repeat: no-repeat;
+    height: 90vh;
+    width:100%;
+    background-position: top 0% right 3%;
+    background-size: cover;
+   padding: 0 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.banner-section h4{
+    padding-bottom:14px ;
+    color:red;
+}
+.banner-section h1{
+    color: black;
+}
+.banner-section button {
+ 
+    background-color: transparent;
+    color: black;
+    border: 0;
+    border-radius: 20px;
+    background-color:red ;
+    padding: 12px 75px 12px 60px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+.banner-section button:hover{
+    background-color:black;
+    color:white ;
+}
+/*======banner-section end==== */
+.about{
+    font-size: 50px;
+}
+ 
+/* ========small card section start==== */
+
+.cart{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+.cart .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    background-image: url('./img/burger.jpg');
+    width: 30%;
+    height: 30vh;
+    background-size: cover;
+     background-position: center; 
+     padding: 30px;
+     margin-top: 30px;
+     transition: all 0.3s;
+     cursor: pointer;
+}
+.cart .cart:hover{
+    background-image: url('./img/burger1.jfif');
+}
+.cart .cart-2 {
+    background-image: url('./img/pasta.jfif');  
+}
+.cart .cart-2:hover{
+    background-image: url('./img/pasta1.jpg');
+}
+.cart .cart-3{
+    background-image: url('./img/pizza.jfif');  
+}
+.cart .cart-3:hover{
+    background-image: url('./img/pizza1.jfif');
+}
+.cart .cart-4{
+    background-image: url('./img/biryani.jfif');  
+}
+.cart .cart-4:hover{
+    background-image: url('./img/biryani1.jfif');
+}
+.cart .cart-5 {
+    background-image: url('./img/chicken.jpg');  
+}
+.cart .cart-5:hover{
+    background-image: url('./img/chicken1.jfif');
+}
+.cart .cart-6 {
+    background-image: url('./img/Ice-Cream.jpg');  
+}
+.cart .cart-6:hover{
+    background-image: url('./img/ice-cream1.jpeg');
+}
+
+/* ========small card section end==== */
+/* ======counting start====== */
+.counting {
+    background-color: red;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh; 
+    margin-top: 15px;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+  }
+  
+  .countNumber {
+    font-size: 70px;
+    margin-top: 15px;
+  }
+  h4{
+    font-size: 30px;
+    font-style: italic;
+  }
+/* ======counting end====== */
+/* ==========footer========== */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 200px;
+    background-color: white;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo {
+    margin-bottom: 50px;
+}
+footer h4 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+footer p {
+    font-size: 17px;
+   margin: 0 0 8px 0;
+}
+footer a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+   margin-bottom:10px ;
+}
+footer a:hover{
+    color: red;
+}
+footer .follow {
+    margin-top: 20px;
+}
+/* ========footer end===== */
+/* =====about page start==== */
+.about-us{
+    color: red;
+    font-size: 70px;
+}
+#about{
+    background-color: white;
+}
+/* ======about page end=== */
+/* =========pasta page start== */
+
+/* =========pasta page end== */
+
+
+
+
+
+
+
+
+
+
+
+  /* Start Media Query */
+  @media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content:flex-start;
+        position: fixed;
+        top: 0;
+        right:-300px;
+        height: 100vh;
+        width: 300px;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    } 
+    #navbar.active{
+        right:0px;
+    }
+    #navbar li {
+   margin-bottom: 25px;
+    } 
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+        border: none;
+    }
+    #lg-bag {
+        display: none;
+    }
+    .banner-h4{
+        font-size: 15px;
+    }
+    .banner-h1{
+        font-size:40px;
+        font-weight: 700;
+    }
+    .banner-p{
+        font-size: 7px;
+        margin: 1px;
+    }
+    .countNumber {
+        font-size: 30px;
+      }
+      h4{
+        font-size: 15px;
+        font-style: italic;
+      }
+      .about-us{
+        color: red;
+        font-size: 50px;
+    }
+ 
+}
+@media (max-width:477px) {
+    #header{
+        padding: 10px 30px;
+    }
+    .banner-section {
+       
+        height: 60vh;
+        width:100%;
+        background-position: top 0% right 3%;
+        background-size: cover;
+       padding: 0 40px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+     .cart {
+        min-width: 100%;
+        height: 30vh;
+         padding: 0px;
+         margin-top: 15px;
+    }
+    .counting {
+        background-color: red;
+        color: white;
+        font-family: 'poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+        overflow: hidden;
+        margin-top:350%;
+      } 
+       
+      
+}
